@@ -1,0 +1,35 @@
+#root {
+  padding: 10px;
+}
+
+.logo {
+  height: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -10px;
+  padding: 10px 30px;
+  border-bottom: solid rgb(202, 202, 202) 1px;
+
+  & h3, h5 {
+    margin: 0;
+    display: inline-block;
+  }
+
+  & .logo-group {
+    display: flex;
+    gap: 10px;
+  }
+
+  & .links-group {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+main {
+  padding: 0 100px;
+}
