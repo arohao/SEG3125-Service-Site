@@ -15,7 +15,9 @@ function Nav() {
         <h5>About Us</h5>
         <h5>Contact</h5>
         <h5>
-          <button>Book Appointment</button>
+          <Link to='/booking'>
+            <button>Book Appointment</button>
+          </Link>
         </h5>
       </div>
     </nav>
