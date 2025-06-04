@@ -1,13 +1,14 @@
-import '../app/App.css';
+import { Link } from 'react-router-dom';
+import '../styles/App.css';
 import logo from '../assets/logo.png';
 
 function Nav() {
   return (
     <nav>
-      <a className='logo-group' href='../../index.html'>
+      <Link className='logo-group' to='/'>
         <img src={logo} className='logo' alt='logo' />
         <h3>Starlight Dental Clinic</h3>
-      </a>
+      </Link>
       <div className='links-group'>
         <h5>Home</h5>
         <h5>Services</h5>
