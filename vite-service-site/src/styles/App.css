@@ -6,6 +6,41 @@
   height: 25px;
 }
 
+.frontpage-logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.image-caption{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.services-group{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card{
+    width: 18rem;
+    border: 1px solid black;
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (min-width: 1000px){
+    .frontpage-logo{
+        width: 75%;
+    }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,6 +67,8 @@ nav {
 }
 
 main {
+  margin-top: 30px;
+  margin-bottom: 15px;
   padding: 0 100px;
 }
 
@@ -41,3 +78,4 @@ a {
   color: black;
   text-decoration: none;
 }
+
