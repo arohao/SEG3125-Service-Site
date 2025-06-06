@@ -6,7 +6,47 @@
   height: 25px;
 }
 
+.frontpage-logo{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.frontpage-header{
+    margin-top: 30px;
+}
+
+.image-caption{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.services-group{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.card{
+    width: 18rem;
+    border: 1px solid black;
+    box-shadow: 0px 1px;
+    height: 100%;
+    width: auto;
+}
+
+.display-6{
+    font-size: 1.2rem;
+}
+
 main {
+  margin-top: 30px;
+  margin-bottom: 15px;
   padding: 0 100px;
   margin-top: 50px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
