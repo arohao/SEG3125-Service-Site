@@ -6,6 +6,7 @@ import BookingSuccess from './pages/BookingSuccess';
 import Contact from './pages/Contact';
 
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/booking-success" element={<BookingSuccess/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

@@ -1,6 +1,8 @@
 import Calendar from 'react-calendar';
 import {useNavigate} from 'react-router-dom';
 import '../styles/calendar.css';
+import '../styles/form.css';
+
 
 function Booking() {
 
@@ -31,12 +33,13 @@ function Booking() {
           <label htmlFor='service'>Select Service</label>
           <select id='service' type='' placeholder="Choose" className='form-control' required defaultValue=''>
             <option disabled value=''>Choose</option>
-            <option value='dental-cleaning'>Dental Cleaning</option>
             <option value='initial_exam'>Initial Exam</option>
+            <option value='dental_cleaning'>Dental Cleaning</option>
             <option value='teeth_removal'>Teeth Removal</option>
+            <option value="root_canal">Root Canal</option>
           </select>
         </div>
-        <div>
+        <div> 
           <label htmlFor='react-calendar'>Select Date</label>
           <Calendar minDate={new Date()} className='calendar-button form-control'/>
         </div>
