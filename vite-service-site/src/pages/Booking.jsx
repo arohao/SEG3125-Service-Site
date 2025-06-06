@@ -1,34 +1,47 @@
-import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css';
+import Calendar from 'react-calendar';
+import {useNavigate} from 'react-router-dom';
+import '../styles/calendar.css';
 
 function Booking() {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate('/booking-success');
+  };
+
   return (
     <main>
       <h1>Book your appointment</h1>
-      <form className='booking-form'>
+      <form className='booking-form needs-validation' action="/booking-success" method="post" onSubmit={handleSubmit}>
         <div>
-          <label for='name'>Full Name</label>
-          <input id='name' type='text' placeholder="Enter Your Full Name"/>
+          <label htmlFor='name'>Full Name</label>
+          <input id='name' type='text' placeholder="Enter Your Full Name" className='form-control' required/>
         </div>
         <div>
-          <label for='phone-number'>Phone Number</label>
-          <input id='phone-number' type='text' placeholder="Enter Your Phone Number"/>
+          <label htmlFor='phone-number'>Phone Number</label>
+          <input id='phone-number' type='text' placeholder="Enter Your Phone Number" className='form-control' required/>
         </div>
         <div>
-          <label for='email'>Email</label>
-          <input id='email' type='text' placeholder="Enter Your Email"/>
+          <label htmlFor='email'>Email</label>
+          <input id='email' type='text' placeholder="Enter Your Email" className='form-control' required/>
         </div>
         <div>
-          <label for='service'>Select Service</label>
-          <select id='service' type='' placeholder="Choose">
-            <option disabled selected>Choose</option>
+          <label htmlFor='service'>Select Service</label>
+          <select id='service' type='' placeholder="Choose" className='form-control' required defaultValue='Choose'>
+            <option disabled>Choose</option>
             <option>Dental Cleaning</option>
             <option>Initial Exam</option>
             <option>Teeth Removal</option>
           </select>
         </div>
         <div>
-          <Calendar minDate={new Date()}/>
+          <label htmlFor='react-calendar'>Select Date</label>
+          <Calendar minDate={new Date()} className='calendar-button form-control'/>
+        </div>
+        <div>
+          <input type='submit' className='submit'/>
         </div>
       </form>
     </main>
