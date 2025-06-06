@@ -7,13 +7,13 @@ function Nav() {
     <nav className='d-flex justify-content-around align-items-center flex-wrap'>
       <Link className='d-flex gap-3 pe-5' to='/'>
         <img src={logo} className='logo' alt='logo' />
-        <h4>Starlight Dental Clinic</h4>
+        <h5>Starlight Dental Clinic</h5>
       </Link>
       <div className='d-flex gap-lg-5 gap-md-3 gap-3  align-items-center' >
-        <h6>Home</h6>
-        <h6>Services</h6>
-        <h6>About Us</h6>
-        <h6>Contact</h6>
+        <h6><Link to='/'>Home</Link></h6>
+        <h6><Link to='/'>Services</Link></h6>
+        <h6><Link to='/'>About Us</Link></h6>
+        <h6><Link to='/contact'>Contact</Link></h6>
         <h6>
           <Link to='/booking'>
             <span className='btn btn-primary butt'>Book Appointment</span>

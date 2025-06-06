@@ -1,4 +1,5 @@
 import dentalImg from "../assets/dental_logo.jpg"
+import {Link} from 'react-router-dom';
 import '../styles/App.css';
 
 function Home() {
@@ -25,7 +26,9 @@ function Home() {
         </p>
 
         {/**How do you use the Link tag for a button?*/} 
-        <button type="button" class="btn btn-outline-primary btn-lg">Contact Us</button>
+        <Link to='/contact'>
+          <button type="button" class="btn btn-outline-primary btn-lg">Contact Us</button>
+        </Link>
 
       </div>
 
