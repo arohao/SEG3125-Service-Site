@@ -9,10 +9,14 @@
 .frontpage-logo{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 65%;
     height: auto;
     margin: auto;
     border-radius: 20px;
+}
+
+.frontpage-header{
+    margin-top: 30px;
 }
 
 .image-caption{
@@ -25,20 +29,19 @@
     display: flex;
     gap: 35px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .card{
     width: 18rem;
     border: 1px solid black;
+    box-shadow: 0px 1px;
     height: 100%;
     width: auto;
 }
 
-@media screen and (min-width: 1000px){
-    .frontpage-logo{
-        width: 75%;
-    }
+.display-6{
+    font-size: 1.2rem;
 }
 
 nav {

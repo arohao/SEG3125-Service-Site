@@ -9,7 +9,27 @@ function Home() {
         <h3 className="image-caption">A Healthy Smile Starts Here</h3>
       </a>
 
-      <h3>Our Services</h3>
+      <h3 className="frontpage-header">New Patients</h3>
+
+      <div>
+        <p className="lead">
+          Welcome to Startlight Dental! We're excited for you to join the family. We’re dedicated to providing gentle, 
+          comprehensive dental care for patients of all ages. Whether you’re here for a routine check-up, cosmetic dentistry, 
+          or advanced treatments, our experienced team is here to help you achieve and maintain a healthy, confident smile. </p>
+        <p className="lead">
+            We combine the latest technology with a caring, personalized approach—because we 
+            believe every patient deserves to feel comfortable, informed, and valued.
+        </p>
+        <p className="lead">
+          Let us brighten your smile—book your appointment today!
+        </p>
+
+        {/**How do you use the Link tag for a button?*/} 
+        <button type="button" class="btn btn-outline-primary btn-lg">Contact Us</button>
+
+      </div>
+
+      <h3 className="frontpage-header">Our Services</h3>
 
       <div className="services-group">
         <div class="card">
@@ -17,7 +37,6 @@ function Home() {
             <h5 class="card-title">Teeth Cleaning</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">$150</h6>
             <p class="card-text">This is a routine dental procedure that removes plaque and tartar from the teeth.</p>
-           
           </div>
         </div>
 
