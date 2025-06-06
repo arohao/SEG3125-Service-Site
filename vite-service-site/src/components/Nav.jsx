@@ -16,7 +16,7 @@ function Nav() {
         <h6>Contact</h6>
         <h6>
           <Link to='/booking'>
-            <a class='btn btn-primary butt'>Book Appointment</a>
+            <span className='btn btn-primary butt'>Book Appointment</span>
           </Link>
         </h6>
       </div>

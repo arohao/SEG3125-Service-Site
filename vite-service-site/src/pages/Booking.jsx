@@ -29,11 +29,11 @@ function Booking() {
         </div>
         <div>
           <label htmlFor='service'>Select Service</label>
-          <select id='service' type='' placeholder="Choose" className='form-control' required defaultValue='Choose'>
-            <option disabled>Choose</option>
-            <option>Dental Cleaning</option>
-            <option>Initial Exam</option>
-            <option>Teeth Removal</option>
+          <select id='service' type='' placeholder="Choose" className='form-control' required defaultValue=''>
+            <option disabled value=''>Choose</option>
+            <option value='dental-cleaning'>Dental Cleaning</option>
+            <option value='initial_exam'>Initial Exam</option>
+            <option value='teeth_removal'>Teeth Removal</option>
           </select>
         </div>
         <div>
