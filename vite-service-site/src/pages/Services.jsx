@@ -1,4 +1,5 @@
 import '../styles/App.css';
+import {Link} from 'react-router-dom';
 
 function Services(){
     return(
@@ -19,7 +20,9 @@ function Services(){
                         <p class="card-text">This prodecure gently removes plaque, tartar, and surface stains that daily brushing and flossing can’t 
                                             reach. We also polish your teeth for a fresh, smooth feel and provide personalized tips to improve your 
                                             at-home oral care routine.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <Link to='/contact' onClick={() => { window.scroll(0, 0); }}>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -29,7 +32,9 @@ function Services(){
                         <p class="card-text">This procedure is a valuable tool that allow us to see what’s happening beneath the surface of your teeth and gums. 
                                             These detailed images help us to detect issues like cavities, infections, bone loss, impacted teeth, and 
                                             more.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <Link to='/contact' onClick={() => { window.scroll(0, 0); }}>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -43,7 +48,9 @@ function Services(){
                         <p class="card-text">This prodecure involves the removal of a tooth or multiple teeth for the protection of your
                                             overall oral health. Whether due to severe decay, infection, crowding, or damage beyond repair, 
                                             our experienced dental team performs extractions with gentle care and precision.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <Link to='/contact' onClick={() => { window.scroll(0, 0); }}>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -53,7 +60,9 @@ function Services(){
                         <p class="card-text">This procedure is a highly effective procedure used to save a tooth that is badly decayed or 
                                             infected. When the inner pulp of the tooth becomes inflamed or damaged, a root canal can relieve 
                                             pain, eliminate infection, and preserve your natural tooth.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <Link to='/contact' onClick={() => { window.scroll(0, 0); }}>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -67,7 +76,9 @@ function Services(){
                         <p class="card-text">This prodecure is a safe way to brighten your smile and boost your confidence. 
                                             Over time, teeth can become discolored due to factors like aging, coffee, or tobacco use. 
                                             Professional whitening helps lift these stains and restore a cleaner appearance to your teeth.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <Link to='/contact' onClick={() => { window.scroll(0, 0); }}>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -77,7 +88,9 @@ function Services(){
                         <p class="card-text">This procedure involves molding a custom tooth cap and placing it on a weakened or damaged tooth to 
                                             protect it. This is called a "Crown", and it's used to restore the shape, strength, and appearance of 
                                             a tooth after injury, decay, or procedures like root canals.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <Link to='/contact' onClick={() => { window.scroll(0, 0); }}>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </Link>
                     </div>
                 </div>
             </div>
