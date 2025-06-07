@@ -11,7 +11,7 @@ function Nav() {
       </Link>
       <div className='d-flex gap-lg-5 gap-md-3 gap-3  align-items-center' >
         <h6><Link to='/'>Home</Link></h6>
-        <h6><Link to='/'>Services</Link></h6>
+        <h6><Link to='/services'>Services</Link></h6>
         <h6><Link to='/'>About Us</Link></h6>
         <h6><Link to='/contact'>Contact</Link></h6>
         <h6>

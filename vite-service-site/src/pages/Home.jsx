@@ -25,7 +25,6 @@ function Home() {
           Let us brighten your smile—book your appointment today!
         </p>
 
-        {/**How do you use the Link tag for a button?*/} 
         <Link to='/contact'>
           <button type="button" class="btn btn-outline-primary btn-lg">Contact Us</button>
         </Link>
