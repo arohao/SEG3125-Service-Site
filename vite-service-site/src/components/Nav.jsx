@@ -1,22 +1,24 @@
 import { Link } from 'react-router-dom';
-import '../styles/App.css';
+import '../styles/components.css';
 import logo from '../assets/logo.png';
 
 function Nav() {
   return (
-    <nav>
-      <Link className='logo-group' to='/'>
+    <nav className='d-flex justify-content-around align-items-center flex-wrap'>
+      <Link className='d-flex gap-3 pe-5' to='/'>
         <img src={logo} className='logo' alt='logo' />
-        <h3>Starlight Dental Clinic</h3>
+        <h5>Starlight Dental Clinic</h5>
       </Link>
-      <div className='links-group'>
-        <h5>Home</h5>
-        <h5>Services</h5>
-        <h5>About Us</h5>
-        <h5>Contact</h5>
-        <h5>
-          <button>Book Appointment</button>
-        </h5>
+      <div className='d-flex gap-lg-5 gap-md-3 gap-3  align-items-center' >
+        <h6><Link to='/'>Home</Link></h6>
+        <h6><Link to='/services'>Services</Link></h6>
+        <h6><Link to='/'>About Us</Link></h6>
+        <h6><Link to='/contact'>Contact</Link></h6>
+        <h6>
+          <Link to='/booking'>
+            <span className='btn btn-primary butt'>Book Appointment</span>
+          </Link>
+        </h6>
       </div>
     </nav>
   );
