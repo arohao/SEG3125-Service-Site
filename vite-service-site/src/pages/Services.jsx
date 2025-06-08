@@ -39,7 +39,7 @@ function Services(){
                 </div>
             </div>
 
-            <h4 className='service-header'>Preventitive Dentistry</h4>
+            <h4 className='service-header'>Preventative Dentistry</h4>
 
             <div className='services-group'>
                 <div class="card">
