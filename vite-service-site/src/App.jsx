@@ -5,6 +5,7 @@ import Booking from './pages/Booking';
 import BookingSuccess from './pages/BookingSuccess';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import AboutUs from './pages/AboutUs';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/booking" element={<Booking/>}/>
         <Route path="/booking-success" element={<BookingSuccess/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about-us" element={<AboutUs />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
