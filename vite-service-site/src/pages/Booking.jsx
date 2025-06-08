@@ -18,19 +18,19 @@ function Booking() {
       <h1>Book your appointment</h1>
       <form className='booking-form needs-validation' action="/booking-success" method="post" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor='name'>Full Name</label>
+          <label htmlFor='name'>Full Name <super>*</super></label>
           <input id='name' type='text' placeholder="Enter Your Full Name" className='form-control' required/>
         </div>
         <div>
-          <label htmlFor='phone-number'>Phone Number</label>
+          <label htmlFor='phone-number'>Phone Number <super>*</super></label>
           <input id='phone-number' type='text' placeholder="Enter Your Phone Number" className='form-control' required/>
         </div>
         <div>
-          <label htmlFor='email'>Email</label>
+          <label htmlFor='email'>Email <super>*</super></label>
           <input id='email' type='text' placeholder="Enter Your Email" className='form-control' required/>
         </div>
         <div>
-          <label htmlFor='service'>Select Service</label>
+          <label htmlFor='service'>Select Service <super>*</super></label>
           <select id='service' type='' placeholder="Choose" className='form-control' required defaultValue=''>
             <option disabled value=''>Choose</option>
             <option value='initial_exam'>Initial Exam</option>
@@ -40,7 +40,7 @@ function Booking() {
           </select>
         </div>
         <div> 
-          <label htmlFor='react-calendar'>Select Date</label>
+          <label htmlFor='react-calendar'>Select Date <super>*</super></label>
           <Calendar minDate={new Date()} className='calendar-button form-control'/>
         </div>
         <div>

@@ -22,20 +22,22 @@ function Contact() {
             Our patients benefit from our comprehensive dental services, modern technology, and appreciate our patient-centered approach. 
             We are your partner in optimal oral health, and together, we’ll achieve your smile goals.
           </p>
+
+          <p>Tel: <a href="tel:6131234567" className='text-primary'>+1 (613)-123 4567</a></p>
         </div>
 
         <div className='col-12 col-md-6'>
           <form className='booking-form needs-validation' action="/booking-success" method="post" onSubmit={handleSubmit}>
             <div className='mb-3'>
-              <label htmlFor='name'>Full Name</label>
+              <label htmlFor='name'>Full Name <super>*</super></label>
               <input id='name' type='text' placeholder="Enter Your Full Name" className='form-control' required />
             </div>
             <div className='mb-3'>
-              <label htmlFor='phone-number'>Phone Number</label>
+              <label htmlFor='phone-number'>Phone Number <super>*</super></label>
               <input id='phone-number' type='text' placeholder="Enter Your Phone Number" className='form-control' required />
             </div>
             <div className='mb-3'>
-              <label htmlFor='email'>Email</label>
+              <label htmlFor='email'>Email <super>*</super></label>
               <input id='email' type='text' placeholder="Enter Your Email" className='form-control' required />
             </div>
             <div className='mb-3'>
@@ -43,7 +45,7 @@ function Contact() {
               <textarea id='additional-info' className='form-control' />
             </div>
             <div className='mb-3'>
-              <label>Preferred Method of Contact</label>
+              <label>Preferred Method of Contact <super>*</super></label>
               <select id='contact-method' className='form-control' required defaultValue=''>
                 <option disabled value=''>Choose</option>
                 <option value='email'>Email</option>
