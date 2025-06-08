@@ -167,6 +167,18 @@ footer {
   height: 300px;
 }
 
+.banner-aboutus {
+  position: relative;
+  z-index: 4;
+  background-image: url('https://media.istockphoto.com/id/687663822/photo/dentists-office-in-barcelona-medical-workers-portrait.jpg?s=612x612&w=0&k=20&c=7TyCaVrUp_BzXEU7G3CbyMkdouqCYwikb1Saz3GTL5c=');
+  background-position-y: -35px;
+  background-size: cover;
+  width: 50%;
+  padding: 0;
+  margin: auto;
+  height: 300px;
+}
+
 super {
   color: red;
 }
