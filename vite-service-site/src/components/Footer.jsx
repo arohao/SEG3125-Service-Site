@@ -2,7 +2,10 @@ import '../styles/components.css';
 
 function Footer(){
     return(
-        <footer>@ 2025 / Created by Wesley Maya and Aroha Upreti</footer>
+        <>
+        <footer className='mt-auto'>@ 2025 / Created by Wesley Maya and Aroha Upreti</footer>
+        
+        </>
     );
 }
 
