@@ -67,6 +67,12 @@ function Home() {
         </div>
       </div>
       
+      <div className="button_custom">
+          <Link to='/services'>
+          <button type="button" class="btn btn-outline-primary btn-lg">Learn More</button>
+          </Link>
+      </div>
+      
       
     </main>
   );
